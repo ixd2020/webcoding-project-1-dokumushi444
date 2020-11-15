@@ -1,72 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <title>hopeyoudon'tmind</title>
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <h1>Hokusai i guess</h1>
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
 
-    <p>
-      I'm your cool new about page. Made with
-      <a href="https://glitch.com">Glitch</a>!
-    </p>
-    <p>
-      <b
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        viverra urna vitae dui blandit rhoncus. Cras finibus augue in diam
-        consectetur viverra. <br /><br /><br /><strong>hokusai is an octopus who
-        travels from world to world fighting monsters with the aid of his human daughter.</strong>Integer dignissim at ligula t .
-        Nulla vestibulum sed metus id egestas. In condimentum lacus ullamcorper
-        orci facilisis sollicitudin. Vestibulum congue laoreet velit, non
-        interdum nisl mollis vel. Nulla et tellus sed ante bibendum varius quis
-        at libero.</b
-      >
-    </p>
-    <p>
-      <a href="/index.html">go to index</a>
-    </p>
-    <h2>
-      kikiki
-    </h2>
-    <img
-      src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fhokusai-old-man%20(1).jpg?v=1603940731960"
-      width="200"
-    />
-    <h3>
-      random video I found on youtube
-    </h3>
-    <iframe
-      width="500"
-      height="315"
-      src="https://www.youtube.com/embed/dbPHPfVw6zQ"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <p>
-      <em
-        >Aliquam urna ex, porta sed augue vitae, semper viverra elit.
-        <b>Nullam ac magna vel sem</b> faucibus iaculis vel a magna. In lacinia
-        gravida commodo. Phasellus ultrices tincidunt magna, at ultricies turpis
-        molestie vel. Pellentesque ut consequat eros, tempor elementum ligula.
-        Praesent luctus sit amet metus eu malesuada. Nullam bibendum elit sit
-        amet mattis volutpat. Sed condimentum porta varius. Nunc eu nunc
-        efficitur, aliquam neque eu, accumsan ipsum.</em
-      >
-    </p>
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-  </body>
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that add the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
 </html>
