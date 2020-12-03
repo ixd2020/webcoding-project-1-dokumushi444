@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>hopeyoudon'tmind</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <link  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <h1>Hokusai i guess</h1>
+
+
+    
+<img src= "https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(7).jpg?v=1606360119117" width ="40%;" >
+<img src= "https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fimages%20(1).jpg?v=1606360535280" width="40%;">
+ 
+    <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fhokusai-old-man%20(1).jpg?v=1603940731960" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(6).jpg?v=1606358659067" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(7).jpg?v=1606360119117" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fimages%20(1).jpg?v=1606360535280" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fhokusai-old-man%20(1).jpg?v=1603940731960" style="width:100%" onclick="currentSlide(1)" alt="Old man">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(6).jpg?v=1606358659067" style="width:100%" onclick="currentSlide(2)" alt="Great waves">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(7).jpg?v=1606360119117" style="width:100%" onclick="currentSlide(3)" alt="great shoreline">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fimages%20(1).jpg?v=1606360535280" style="width: 100%" onclick="currentSlide(4)" alt="36 views of mount fuji">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
