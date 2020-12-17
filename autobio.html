@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>dom test</title>
+    <table style="width:100%">
+      <tr>
+        <th><a href="/about.html">about</a></th>
+        <th><a href="/artwork.html">artwork</a></th>
+        <th><a href="/autobio.html">biography</a></th>
+        <th><a href="/index.html">home</a></th>
+      </tr>
+    </table>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <body>
+       <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("button").click(function() {
+          $("p").css("background-color", "white");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("button").click(function() {
+          $("h1, h2, p").toggleClass("blue");
+          $("div").toggleClass("mybutton");
+        });
+      });
+    </script>
+    <style>
+      .important {
+        color:yellow;
+        background color:blue
+        padding: 20px
+        font-weight: bold;
+        font-size: xx-large;
+      }
+
+      .blue {
+        color: green;
+        padding;20px;
+        border:1px solid red;
+        background color:blue;
+      }
+            .mybutton {
+              
+        color: green;
+        padding;20px;
+        border:1px solid red;
+        background color:blue;
+      }
+    </style>
+      <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+  </head>
+  <body>
+    
+    <br />
+
+    <div class="mybutton"><button>
+      Change text colour
+      </button></div>
+    <br>
+    <style>h2 {text-align: center;}</style>
+      <h2>Katsuhika hokusai</h2>
+<img src="https://cdn.glitch.com/40f54d9c-dd99-466b-b4f4-92aa5d48bda0%2Fdownload%20(10).svg?v=1608184443717" alt="Avatar" class="image" style="width:30%">
+      <p id="demo">
+        Katsuhika Hokusai has the most recorded aliases in japanese artist
+        history. he lived from 31 October 1760 – 10 May 1849.he produced over
+        30,000 paintings, sketches, woodblock prints, and images for picture
+        books in total. His most notable work is the great wave off katagawa.His
+        work transformed the ukiyo-e artform from a style of portraiture largely
+        focused on courtesans and actors into a much broader style of art that
+        focused on landscapes, plants, and animals. He was known by more than 30
+        aliases in his lifetime. It is believed that the aliases he used can divide his life into sections. 
+      </p>
+      <div class="box blackbox twocol">
+  <p>It is believed his father was Nakajima Ise mirror-maker for the shōgun. When he was 12, his father sent him to work at a bookshop and lending library. The books are made of wooden blocks, which are polpular entertainment amng middle and upper classes.</p>
+  </div>
+    <div class="box yellowbox twocol">
+  <p>He had 2 wives and 2 sons and 3 daughters. The youngest one, Ei, or Oi, later became his pupil and assassistant. His first wife died in 1970s, and took up his second wife in 1997, but she died within a short time too.</p>
+  </div>  
+    <div class="box redbox onecol">
+  <p>He made most of his famous artworks at age 60. He was an aprentice of shunsho, a woodblock print master. Shunsho was the master of the studio, Katsukawa Shunshō. There hokusai got his first alias, shunro. It was then that he released his first work and met his first wife. After the death of shunsho, he started exploring different artstyles, including european styles he was exposed to through French and Dutch copper engravings he was able to acquire.</p>
+  </div>  
+   
+    </body>
+ 
+</html>
